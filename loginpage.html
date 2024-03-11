@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .primary{
+            color: aqua;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: ;
+            font-size: 25px;
+            border-style: solid;
+
+        }
+        .second{
+            border-radius: 40px;
+            text-align: center;
+            color: hotpink;
+            font-weight:50px ;
+            float: left;
+            
+        }
+        .button{
+            border-radius: 40px;
+
+        }
+        .body{
+
+        }
+        #heading{
+            text-align: center;
+            background-color: aliceblue;
+
+        }
+    </style>
+</head>
+
+<body style="background-image:url(bg.jpg);" class="container">
+    <h1 id="heading">Login Form</h1>
+    <section class="sex">
+        <form action="form.py">
+            <label for="name" class="primary">Name of Candidate :</label>
+            <input type="text" name="name" id="name" class="second">
+            <br>
+            <br>
+            <label for="course" class="primary">Course of Candidate :</label>
+            <select name="course" id="course">
+                <option value="py">Python</option>
+                <option value="jv">Java</option>
+                <option value="c">C++</option>
+                <option value="R">R</option>
+            </select>
+            <br><br>
+            <label for="qualification" class="primary">Qualification :</label>
+            <input type="text" name="qualification" id="qualification" class="second">
+            <br><br>
+            <div>
+                <label for="gender" class="primary">Gender :</label>
+                Male <input type="radio" name="male" id="gender" class="primary">
+                Female <input type="radio" name="female" id="gender" class="primary">
+            </div><br>
+            <label for="email" class="primary">E-mail :</label>
+            <input type="email" name="email" id="email" class="second">
+            <br><br>
+            <label for="number" class="primary">Contact :</label>
+            <input type="number" name="number" id="number" class="second">
+            <br><br>
+            <input type="submit" name="submit" class="button">
+            <input type="reset" name="reset" class="button">
+        </form>
+    </section>
+</body>
+
+</html>
